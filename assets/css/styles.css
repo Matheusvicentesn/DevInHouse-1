@@ -224,16 +224,11 @@ a {
 }
 
 .parent {
-  /* width: auto; */
-
-  overflow-x: hidden;
-  /* float: left; */
-
-  margin: 1rem;
-  padding: 2rem 2rem;
-  /* text-align: center; */
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 }
-.child {
+/* .child {
   width: 1500px;
   font-size: 15px;
   font-family: arial;
@@ -243,4 +238,13 @@ a {
 
   padding: 1rem 1rem;
   vertical-align: middle;
+} */
+
+.parent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.parent::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
 }
